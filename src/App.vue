@@ -1,20 +1,21 @@
 <template>
   <div id="app">
     <myheader></myheader>
-    <img src="./assets/logo.png">
-    <router-view/>
+    <mycontent message='hello hello'></mycontent>
   </div>
 </template>
 
 <script>
 /** 子コンポーネントの読み込み */
 import myheader from './components/myheader'
+import mycontent from './components/mycontent'
 
 /** 子コンポーネントを使うことをここで宣言 */
 export default {
   name: 'App',
   components: {
-    myheader
+    myheader,
+    mycontent
   }
 }
 </script>
